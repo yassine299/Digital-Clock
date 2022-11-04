@@ -8,5 +8,12 @@ function displayClock() {
     document.getElementById("time").innerHTML = time;
     document.getElementById("date").innerHTML = date;
 
+    if(time.includes("PM")){
+        document.getElementById("hi").innerHTML = "Good Morning";
+    }
+    else{
+        document.getElementById("hi").innerHTML = "Good Evening";
+    }
+
     setTimeout(displayClock, 1000);
 }
